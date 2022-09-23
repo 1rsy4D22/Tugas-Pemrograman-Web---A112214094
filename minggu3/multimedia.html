@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia HTML 5</title>
+</head>
+<style>
+    .bg{
+        text-align: center;
+        background-color: black;
+        margin-top: 10px;
+        margin-bottom:50px ;
+    }
+    .dobel{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        background-color: rgba(6, 34, 85, 0.662);
+        margin: 20px;
+        padding: 20px;
+
+    }
+</style>
+
+<body>
+    <div class="dobel">
+    <h1 align="center" width="350" >Clip Lord of The Rings : The Fellowship of the Ring</h2>
+    </div>
+    <div class="bg">
+    
+     <video controls id="video33" width="800px" height="600px">
+        <source
+            src="You Shall Not Pass - The Lord of the Rings_ The Fellowship of the Ring (7_8) Movie CLIP (2001) HD_Trim.mp4"
+            type="video/mp4">
+        <track src="captions.vtt" kind="subtitles" srclang="en" label="English" default>
+    </video><br>
+</div>
+    <div style="text-align:center ;">
+        <button onclick="playVid()" type="button" > Play/Pause</button>
+        <button onclick="Normaling()" type="button">Normal</button>
+        <button onclick="bigger()" type="button">Big</button>
+        <button onclick="smaller()" type="button">Small</button>
+        <button onclick="durationVid()" type="button">Duration</button>
+        <button onclick="getVolume()" type="button">Volume</button>
+        <button onclick="setLowVolume()" type="button">LowVolume</button>
+        <button onclick="setFullVolume()" type="button" >FullVolume</button>
+
+
+    </div>
+    <script>
+        var videoKU = document.getElementById("video33");
+
+        function playVid() {
+            if (videoKU.paused)
+                videoKU.play();
+            else videoKU.pause();
+        }
+        function bigger() {
+            videoKU.width = 1500;
+        }
+        function smaller() {
+            videoKU.width = 500;
+        }
+        function Normaling() {
+            videoKU.width = 800;
+        }
+        function durationVid() {
+            alert(videoKU.duration);
+        }
+        function getVolume() {
+            alert(videoKU.volume);
+        }
+        function setLowVolume() {
+            videoKU.volume = 0.05;
+        }
+        function setFullVolume() {
+            videoKU.volume = 1.0;
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
