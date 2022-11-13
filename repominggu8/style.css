@@ -1,0 +1,42 @@
+* {
+ box-sizing: border-box;
+}
+
+header {
+    padding: 50px;
+    text-align: center;
+    background-color: #CCC;
+    border: 2px solid blue;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #CCC;
+    margin-top: 0px;
+    display: block;
+    padding: 8px;
+    border: 2px solid red;
+
+}
+
+article {
+    float: left;
+    width:  80%;
+    padding: 0 20px;
+    background-color: #CCC;
+    border: 2px solid yellow;
+}
+
+.satu {
+    color : blue;
+}
+
+.dua{
+    color: brown;
+}
